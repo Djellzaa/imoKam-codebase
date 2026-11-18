@@ -1,0 +1,18 @@
+@foreach($accounts as $account)
+    <div class="box col mb-4 agent-item" data-name="{{ strtolower($account->name) }}">
+        <div class="box-agent hover-img wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
+            <a href="{{ $account->url }}" class="d-block box-img img-style mb-2">
+                {{ RvMedia::image($account->avatar_url, $account->name) }}
+                {!! Theme::partial('shortcodes.agents.partials.social-links', compact('account')) !!}
+            </a>
+            <div class="content">
+                <div class="info">
+                    <a href="{{ $account->url }}">
+                        <h6 class="link">{{ $account->name }}</h6>
+                    </a>
+                    {!! Theme::partial('shortcodes.agents.partials.info', compact('account')) !!}
+                </div>
+            </div>
+        </div>
+    </div>
+@endforeach

@@ -1,0 +1,20 @@
+{
+    "name": "botble/homzen",
+    "description": "Homzen theme",
+    "type": "theme",
+    "require": {
+        "php": "^8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Theme\\Homzen\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Theme\\Homzen\\Providers\\HookServiceProvider"
+            ]
+        }
+    }
+}

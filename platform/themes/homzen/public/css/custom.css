@@ -1,0 +1,39 @@
+.widget-price .form-group {
+    flex: 1;
+}
+
+.widget-price .form-group .form-control {
+    width: 100%;
+    border: 1px solid #e4e8e8;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    height: 40px;
+}
+
+.widget-price .form-group .form-label {
+    font-size: 14px;
+    color: #5c6368;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.widget-price .form-group .form-control:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(var(--primary-color-rgb), 0.2);
+}
+
+.single-detail.ck-content {
+    font-family: Arial, sans-serif;
+    font-size: 21px;
+}
+
+.single-detail.ck-content p,
+.single-detail.ck-content span,
+.single-detail.ck-content li,
+.single-detail.ck-content td,
+.single-detail.ck-content th {
+    font-size: 21px !important;
+    font-family: Arial, sans-serif !important;
+}

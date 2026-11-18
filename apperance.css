@@ -1,0 +1,44 @@
+.flat-section {
+    padding: 40px 0;
+}
+
+.header-property-detail .content-bottom .info-box .meta li {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    display: none;
+}
+@media only screen and (max-width: 991px) {
+   .subtitle {
+        padding-right: 0;
+       display: none;
+    }
+  .title{
+    font-size: 35px;
+    text-align: left;
+  }
+  .flat-slider.home-2 .slider-content {
+        padding: 30px 0;
+    }
+}
+@media (min-width: 1200px) {
+    .row-cols-xl-4>* {
+        flex: 0 0 auto ;
+        width: 25%;
+      
+    }
+}
+
+.single-detail.ck-content p,
+.single-detail.ck-content span,
+.single-detail.ck-content li,
+.single-detail.ck-content td,
+.single-detail.ck-content th {
+    font-size: 21px !important;
+    font-family: Arial, sans-serif !important;
+}
+    .banner-video img{
+       width: 50%;
+       margin-left: 340px;
+}

@@ -1,0 +1,93 @@
+/* Pagination fixes - ensure visibility and clickability */
+
+.wd-navigation {
+    position: relative;
+    z-index: 20;
+}
+
+.wd-navigation .flat-pagination {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    margin: 20px 0;
+    position: relative;
+    z-index: 20;
+    flex-wrap: wrap;
+}
+
+.wd-navigation .flat-pagination li {
+    position: relative;
+    z-index: 21;
+}
+
+.wd-navigation .flat-pagination li a,
+.wd-navigation .flat-pagination li span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 38px;
+    height: 38px;
+    padding: 0 10px;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #0b1220;
+    box-shadow: 0 1px 4px rgba(12, 22, 40, 0.06);
+    text-decoration: none;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.wd-navigation .flat-pagination li a:hover {
+    background: #f5f5f5;
+    border-color: #ccc;
+    box-shadow: 0 2px 8px rgba(12, 22, 40, 0.12);
+}
+
+.wd-navigation .flat-pagination li .current {
+    background: var(--primary-color, #FF6B6B);
+    color: #ffffff;
+    border-color: var(--primary-color, #FF6B6B);
+    box-shadow: 0 2px 8px rgba(255, 107, 107, 0.3);
+}
+
+.wd-navigation .flat-pagination li span {
+    color: #999;
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    cursor: default;
+}
+
+/* Ensure pagination is not hidden by adjacent elements */
+.wd-navigation .flat-pagination li a:focus,
+.wd-navigation .flat-pagination li span:focus {
+    outline: 2px solid var(--primary-color, #FF6B6B);
+    outline-offset: 2px;
+}
+
+/* Icons in pagination (chevrons) */
+.wd-navigation .flat-pagination li a .icon {
+    width: 18px;
+    height: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Make sure parent containers don't clip pagination */
+.flat-section-v5,
+.flat-recommended,
+.flat-recommended-v2 {
+    overflow: visible;
+}
+
+/* Extra z-index boost for absolutely positioned pagination if needed */
+.wd-navigation {
+    position: relative;
+    z-index: 50;
+}
